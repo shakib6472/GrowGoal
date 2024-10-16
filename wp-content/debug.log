@@ -1,0 +1,4 @@
+[15-Oct-2024 23:47:33 UTC] Sender id: 1
+[15-Oct-2024 23:47:33 UTC] R id: 18138
+[15-Oct-2024 23:47:33 UTC] Message: here is the message
+[15-Oct-2024 23:47:33 UTC] PHP Warning:  Attempt to read property "display_name" on bool in C:\xampp\htdocs\growgoal\wp-content\plugins\growgoal\functions\ajax.php on line 175

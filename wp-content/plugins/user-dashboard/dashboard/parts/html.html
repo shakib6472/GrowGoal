@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'
+        integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'>
+    <script src='https://kit.fontawesome.com/46882cce5e.js' crossorigin='anonymous'></script>
+    <style>
+        .teacher.card {
+            padding: 20px;
+            font-family: 'poppins';
+
+        }
+
+        .teacher.card .card-top {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 65px;
+        }
+
+        .teacher.card .card-top .profile::after,
+        .teacher.card .card-top .details::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 80px;
+            background-color: #986BF3;
+            border-radius: 13px;
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+        }
+
+        .teacher.card .card-top .details .name::after,
+        .heading::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background-color: #986BF3;
+            border-radius: 13px;
+            top: 80%;
+            left: 0px;
+
+        }
+
+
+        .teacher.card .card-top .details .name,
+        .heading {
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'poppins';
+            line-height: 49px;
+            color: #986BF3;
+            position: relative;
+
+        }
+
+        .teacher.card .card-top .details {
+            position: relative;
+
+        }
+
+
+        .teacher.card .card-top .about-me {
+            max-width: 48%;
+        }
+
+        .teacher.card .card-top .details i {
+            font-size: 18px;
+            font-weight: 700;
+            margin-right: 15px;
+            color: #986BF3;
+        }
+
+        .teacher.card .card-top .details .list {
+            font-size: 18px;
+            font-weight: 400;
+            margin-right: 15px;
+
+        }
+
+        .teacher.card .card-top .lists {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+
+
+        .profile,
+        .details,
+        .about-me {
+
+            position: relative;
+            height: 100%;
+        }
+
+        .profile {
+            width: 150px;
+        }
+
+        .profile img {
+            max-width: 100%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #a1a1a1;
+        }
+
+        .teacher.card .form-container .gridbox-fortime {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        .teacher.card .form-container .gridbox-fortime .time-slot {
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid #efefef;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            position: absolute;
+            background-color: #986BF390;
+            max-width: 45%;
+            width: 100%;
+            z-index: 125;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+        }
+
+        /* Styles for mobile devices */
+        @media (max-width: 767px) {
+            .teacher.card .card-top {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .teacher.card .card-top .profile::after,
+            .teacher.card .card-top .details::after {
+                content: '';
+                display: none;
+            }
+
+            .profile,
+            .details,
+            .about-me {
+
+                position: relative;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                background-color: #986BF3 0;
+                max-width: 100%;
+                width: 100%;
+                z-index: 125;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                visibility: hidden;
+            }
+
+        }
+
+        .book-card {
+            width: 258px;
+            height: 187px;
+            background-image: linear-gradient(#986cf3, #1D164C);
+            border-radius: 30px;
+            padding: 21px;
+        }
+
+        .book-card .topline {
+            font-weight: 600;
+            font-family: "Jost", sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 27.14px;
+            text-align: left;
+            color: #FFFFFF;
+
+
+        }
+
+        .book-card .topline span {
+            font-family: "Jost", sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 27.14px;
+            text-align: left;
+            color: #80F7FF;
+
+        }
+
+        .book-card .date-time {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 20px;
+
+        }
+
+
+        .book-card .date p {
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            background-color: #FFFFFF20;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+            padding: 09px;
+            color: #fff;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        .book-card .time p {
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            background-color: #FFFFFF20;
+            cursor: pointer;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+            padding: 09px;
+            color: #fff;
+            margin-bottom: 10px
+        }
+
+        .book-dates {
+            background-image: url('/wp-content/plugins/growgoal/assets/img/bg1.png');
+            background-position: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            max-width: 408px;
+            width: 408px;
+            border-radius: 20px;
+            padding: 43px 15px 20px 15px;
+            position: absolute;
+            box-shadow: 0px 0px 100px 1000px #00000090;
+            left: 90%;
+            top: 90%;
+            visibility: hidden;
+
+        }
+
+        .book-times {
+            background-image: url('/wp-content/plugins/growgoal/assets/img/bg1.png');
+            background-position: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            max-width: 400px;
+            width: 400px;
+            overflow: hidden;
+            border-radius: 20px;
+            padding: 43px 15px 20px 15px;
+            position: absolute;
+            box-shadow: 0px 0px 100px 1000px #00000090;
+            right: 40%;
+            top: 100%;
+            visibility: hidden;
+        }
+
+        .back {
+            cursor: pointer;
+            position: absolute;
+            left: 16px;
+            top: 10px;
+            color: #fff;
+            border: 1px solid #efefef;
+            padding: 3px 10px;
+            border-radius: 50px;
+            font-size: 10px;
+
+        }
+
+        .book-dates p {
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            background-color: #FFFFFF20;
+            font-family: "Jost", sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: center;
+            padding: 3px;
+            color: #fff;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+
+        .book-times p {
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            background-color: #FFFFFF20;
+            font-family: "Jost", sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: center;
+            padding: 3px;
+            color: #fff;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row g-4">
+            <div class="teacher card p3">
+
+                <div class="card-middle">
+                    <div class="form-container">
+                        <div class="row vh-100 g-5 d-flex align-items-start justify-content-start position-relative">
+                            <div class="overlay">
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <dotlottie-player
+                                    src="https://lottie.host/14a753da-123d-4abb-b670-766ff7ff260b/Z7BI3X6VtN.json"
+                                    background="transparent" speed="1" style="width: 150px; height: 150px;" loop
+                                    autoplay></dotlottie-player>
+                            </div>
+
+                            <div class="gridbox-fortime d-none">
+                                <div class="time-slot"> 09:00 AM</div>
+                                <div class="time-slot"> 09:00 AM</div>
+                                <div class="time-slot"> 09:00 AM</div>
+                                <div class="time-slot"> 09:00 AM</div>
+                            </div>
+
+                            <div class="book-card d-flex flex-column justify-content-between position-relative">
+                                <div class="topline">Let's Book a <span class="d-block">Lesson</span></div>
+                                <div class="date-time">
+                                    <div class="date">
+                                        <p class="">Select Date</p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="book-dates">
+                                    <div class="back"><i class="fas fa-left-long"></i></div>
+                                    <p class="date-picker" data-date="19-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="12-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="13-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="14-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="15-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="16-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="17-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="18-09-2024">Thu, 19 Sep</p>
+                                    <p class="date-picker" data-date="20-09-2024">Thu, 19 Sep</p>
+
+                                    <div class="book-times">
+                                        <div class="back"><i class="fas fa-left-long"></i></div>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+                                        <p class="time-slot" data-date="19-09-2024">09:00 AM</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script src='https://code.jquery.com/jquery-3.7.1.min.js'
+    integrity='sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $(".date-pick-for-time").flatpickr({
+            enableTime: false,
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d",
+            minDate: new Date().fp_incr(1),
+            maxDate: new Date().fp_incr(7), // 14 days from now
+        });
+
+        $('.date-time .date p').click(function (e) {
+            console.log('Date');
+            $('.book-dates').css('visibility', 'visible');
+        });
+        $('.date-picker').click(function (e) {
+            console.log('Time');
+            $('.book-times').css('visibility', 'visible');
+        });
+
+        $('.back').click(function (e) {
+            console.log('back');
+            $('.book-dates').css('visibility', 'hidden');
+            $('.book-times').css('visibility', 'hidden');
+        });
+
+
+        $('#date').on('change', function () {
+            $('.overlay').css('visibility', 'visible');
+            var dateValue = $(this).val();
+            console.log(dateValue);
+            var dateParts = dateValue.split('-');
+            var year = dateParts[0];
+            var month = dateParts[1];
+            var day = dateParts[2];
+
+            console.log('Month: ' + month);
+            console.log('Day: ' + day);
+        });
+
+
+    });
+</script>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Google Font Link -->
+     <script src='https://kit.fontawesome.com/46882cce5e.js' crossorigin='anonymous'></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+<style>
+    * {
+    padding: 0px;
+    margin: 0px;
+}
+/* Same Class */
+.custom-background {
+    background-position: center;
+    background-size: cover;
+}
+
+.main-custom-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+}
+.custom-nav-bar {
+    /* background-color: #26265b; Dark background */
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 15px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Rectangle-29.png);
+}
+
+.custom-nav-child-img {
+    height: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 20px;
+}
+.custom-nav-child-profile {
+    height: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.custom-profile-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.custom-profile-one i{
+    color: #fff;
+    font-size: 38px;
+}
+.custom-bell {
+    width: 26px;
+    height: 30px;
+}
+.custom-porfile {
+    height: 82px;
+    width: 82px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 2px;
+    
+}
+.custom-profile-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.custom-student-name {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+}
+.custom-student {
+    font-weight: 500;
+    font-size: 17px;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+}
+.custom-nav-child-logout {
+    height: 100px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.custom-child-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.active.custom-child-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+}
+.active.custom-child-images::after {
+    content: '';
+    height: 25px;
+    width: 100%;
+    background-color: #80F7FF;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    border-radius: 13px;
+
+}
+.custom-child-images img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+}
+.active.custom-child-images img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: #87F1FF;
+}
+.active .custom-lesson-name {
+    font-family: "Podkova", serif;
+    font-size: 20px;
+    line-height: 35.3px;
+    color:#87F1FF;
+    ;
+}
+.custom-lesson-name {
+    font-family: "Podkova", serif;
+    font-size: 20px;
+    line-height: 35.3px;
+    color: #ffffff;
+}
+.custom-logout-button-container {
+    display: inline-block;
+}
+
+.custom-logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #2a75d9, #d93c8f);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+.custom-logout-button i{
+   font-size: 24px;
+}
+
+.custom-logout-button:hover {
+    background: linear-gradient(45deg, #1a55c5, #c1347e);
+}
+
+.custom-logout-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+</style>
+</head>
+<body>
+	<div class="main-custom-page">
+        <div class="custom-nav-bar custom-background">
+			<div class="custom-nav-child-img">
+				<div class="custom-child-images active">
+					<img src="https://growgoal.online/wp-content/uploads/2024/09/book.png" alt="">
+					<h3 class="custom-lesson-name">Book A Lesson</h3>
+				</div>
+				<div class="custom-child-images">
+					<img src="https://growgoal.online/wp-content/uploads/2024/09/book.png" alt="">
+					<h3 class="custom-lesson-name">Enter The Lesson</h3>
+				</div>
+				<div class="custom-child-images">
+					<img src="https://growgoal.online/wp-content/uploads/2024/09/book.png" alt="">
+					<h3 class="custom-lesson-name">Practice</h3>
+				</div>
+				<div class="custom-child-images">
+					<img src="https://growgoal.online/wp-content/uploads/2024/09/book.png" alt="">
+					<h3 class="custom-lesson-name">Messages</h3>
+				</div>
+				<div class="custom-child-images">
+					<img src="https://growgoal.online/wp-content/uploads/2024/09/book.png" alt="">
+					<h3 class="custom-lesson-name">Money Tools</h3>
+				</div>
+			</div>
+			
+			
+			<div class="custom-nav-child-profile">
+				<div class="custom-profile-one">
+                    <i class="fas fa-bell custom-bell" ></i>
+					 <img src="https://growgoal.online/wp-content/uploads/2024/09/image-1.png" class="custom-porfile" alt="">
+				</div>
+				<div class="custom-profile-two">
+					<h2 class="custom-student-name">Tynisha Obey</h2>
+					<h4 class="custom-student">Student</h4>
+				</div>
+
+			</div>
+			<div class="custom-nav-child-logout">
+				<div class="custom-logout-button-container">
+					<button class="custom-logout-button">
+						Logout
+						<i class="fas fa-right-long"></i>
+					</button>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+</body>
+</html>
+
+

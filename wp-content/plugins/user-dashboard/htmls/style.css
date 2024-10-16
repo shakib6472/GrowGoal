@@ -1,0 +1,1181 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --font-family:"Jost", sans-serif;
+}
+/* Same Class */
+body .main-custom-page .custom-background {
+    background-position: center;
+    background-size: cover;
+}
+body .main-custom-page .border {
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+}
+
+body .main-custom-page {
+    font-family:"Jost", sans-serif!important;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    background-color: #000;
+}
+
+body .main-custom-page .custom-nav-bar {
+    /* background-color: #26265b; Dark background */
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 15px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Rectangle-29.png);
+}
+
+body .main-custom-page .custom-nav-bar .custom-nav-child-img {
+    height: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 20px;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-profile {
+    height: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-profile .custom-profile-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-profile .custom-profile-one i{
+    color: #fff;
+    font-size: 38px;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-profile .custom-bell {
+    width: 26px;
+    height: 30px;
+}
+body .main-custom-page .custom-nav-bar .custom-profile-one .custom-porfile {
+    height: 82px;
+    width: 82px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 2px;
+    
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-profile .custom-profile-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body .main-custom-page .custom-nav-bar .custom-profile-two  .custom-student-name {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-profile .custom-profile-two .custom-student {
+    font-weight: 500;
+    font-size: 17px;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-logout {
+    height: 100px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+body .main-custom-page .custom-nav-bar .custom-child-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+body .main-custom-page .custom-nav-bar .active.custom-child-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+}
+body .main-custom-page .custom-nav-bar .active.custom-child-images::after {
+    content: '';
+    height: 25px;
+    width: 100%;
+    background-color: #80F7FF;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    border-radius: 13px;
+
+}
+body .main-custom-page .custom-nav-bar .custom-child-images img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-img .active.custom-child-images img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: #87F1FF;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-img .active .custom-lesson-name {
+    font-family: "Podkova", serif;
+    font-size: 20px;
+    line-height: 35.3px;
+    color:#87F1FF;
+    ;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-img .custom-lesson-name {
+    font-family: "Podkova", serif;
+    font-size: 20px;
+    line-height: 35.3px;
+    color: #ffffff;
+}
+body .main-custom-page .custom-nav-bar .custom-nav-child-logout .custom-logout-button-container {
+    display: inline-block;
+}
+
+body .main-custom-page .custom-nav-bar .custom-nav-child-logout .custom-logout-button-container .custom-logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #2a75d9, #d93c8f);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+body .main-custom-page .custom-nav-bar .custom-logout-button-container .custom-logout-button i{
+   font-size: 24px;
+}
+
+body .main-custom-page .custom-nav-bar .custom-logout-button-container .custom-logout-button:hover {
+    background: linear-gradient(45deg, #1a55c5, #c1347e);
+}
+
+body .main-custom-page .custom-nav-bar .custom-logout-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+body .main-custom-page .custom-nav-bar .custom-success-heading {
+    font-family:var(--font-family) ;
+    padding: 15px 0px;
+    font-size: 31px;
+    font-weight: 600;
+    color: #fff;
+}
+/* --Custom Page one Second container--- */
+body .main-custom-page .custom-pageone-sec-container{
+    display: flex;
+    gap: 20px;
+}
+/* --------Custom left container----------- page 1*/
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child {
+   display: flex;
+   gap: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-profile {
+    width:344px ;
+    height: 288px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-7-1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-profile .custom-profile-photo {
+    width: 166px;
+    height: 166px;
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-profile .custom-add-photo {
+    position: absolute;
+    right: 50px;
+    bottom: 90px;
+    background-color: #87F1FF;
+    border-radius: 40px;
+    padding: 5px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-profile h4 {
+    color: #fff;
+    padding-top: 15px;
+    font-size: 22px;
+    width: 600;
+    font-family: "Podkova", serif;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-info {
+    width: 721px;
+    height: 288px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-9-2.png);
+    background-position:center;
+    background-size: cover;
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-info .custom-contact-info form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-info .custom-contact {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Podkova", serif;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-info .custom-contact::placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Podkova", serif;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-student-info .custom-contact-info #custom-sub-btn {
+    margin-top: 20px;
+    padding: 10px;
+    width: 30%;
+    background-image: linear-gradient(45deg, #044BAF,#C26AE3);
+    color: #fff;
+    font-family: "Podkova", serif;
+    border: 1px solid #BEBEBE;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-box-one {
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+    width: 344.91px;
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    height: 268.39px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/10/Untitled-design.png);
+    background-size: cover;
+    background-position: center;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-box-two {
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    width: 344.91px;
+    height: 268.39px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/10/Untitled-design-2.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-box-three {
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    width: 344.91px;
+    height: 268.39px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/10/Untitled-design-3-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container  .custom-note-title {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: "Podkova", serif;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-select {
+    width: 100%;
+    padding: 5px;
+    font-family: "Podkova", serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    background: white;
+    color: black;
+    outline: none;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container  .custom-note-title .custom-note-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Specific Images for each section */
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-box-one .custom-image-science {
+    background-image: url('path_to_science_image');
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-box-one .custom-note-box-two .custom-image-reading {
+    background-image: url('path_to_reading_image');
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-sec-child .custom-notes-container .custom-note-box-one .custom-note-box-one .custom-note-box-three .custom-image-books {
+    background-image: url('path_to_books_image');
+}
+
+/* --------Custom Right container----------- page 1*/
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container {
+    width: 40%;
+    height: 637px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    border-radius: 28px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg ,#C26AE3,#87F1FF,#044BAF);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* Custom Right Top */
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top {
+    display: flex;
+    gap: 20px;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-top-first {
+    width:60%;
+    height: 250px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-14.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #87F1FF;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-top-second {
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-top-one {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #87F1FF;
+    box-sizing: border-box;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Rectangle-58.png);
+    height: 117px;
+}
+body .main-custom-page .custom-right-top-two {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #87F1FF;
+    box-sizing: border-box;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Rectangle-58.png);
+    height: 117px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-top-second .custom-right-top-one .custom-right-date {
+    display: flex;
+    gap: 10px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-top-second .custom-right-top-one .custom-right-date .custom-right-date-h2{
+    font-size: 28px;
+    color: #fff;
+    font-family: "Podkova", serif;
+    font-weight: 600;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-top-second .custom-right-top-one .custom-right-right-clock {
+    font-size: 46px;
+    width: 400;
+    font-family:var(--font-family);
+    color: #fff;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-right-heading {
+    font-family: "Podkova", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+/* Custom left end */
+
+
+body .main-custom-page .custom-pageone-sec-container .custom-right-end .custom-to-do-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: linear-gradient(to bottom, #76b2fe, #b69efe);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-end .custom-to-do-list-container .custom-to-do-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-right-end .custom-to-do-header .custom-to-do-title {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Podkova", serif;
+    margin: 0;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-right-end .custom-to-do-header .custom-to-do-icon {
+    font-size: 30px;
+}
+
+body .main-custom-page .custom-pageone-right-container .custom-right-end .custom-to-do-list-container .custom-to-do-header .custom-add-task-button {
+    background-color: #7f8cfd;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body .main-custom-page .custom-pageone-right-container .custom-right-end .custom-to-do-list-container .custom-to-do-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+body .main-custom-page .custom-pageone-right-container .custom-right-end .custom-to-do-list-container .custom-to-do-label {
+    font-size: 16px;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+body .main-custom-page .custom-pageone-right-container .custom-right-end  .custom-to-do-select {
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    color: black;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-to-do-icon-img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ---------Page 2 Starte Here--------- */
+body .main-custom-page .custom-pageone-sec-container .custom-page-two{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .custom-sec-clock-box {
+    width: 466.41px;
+    height: 277.41px;
+    border-radius: 38.61px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-1.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-sec-current-time{
+    font-size: 80px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: #fff;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .custom-sec-clock-box  .custom-sec-current-date{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+    font-family: "Podkova", serif;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .sec-clock-img-clock-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+body .main-custom-page .sec-clock-img {
+    padding: 5px;
+    background-image: linear-gradient(45deg,#044BAF,#C26AE3);
+    border-radius: 14px;
+}
+body .main-custom-page .sec-clock {
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Podkova", serif;
+
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .custom-sec-roting-box{
+    width: 466.41px;
+    height: 340px;
+    border-radius: 38.61px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-5.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px;
+}
+/* ----Page Two Right Site----- */
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-right-container {
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-3.png);
+    background-size: cover;
+    background-position: center;
+    width: 1050px;
+    height: 635px;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-sec-roting-heading {
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #044BAF;
+    font-family: "Podkova", serif;
+}
+body .main-custom-page .custom-sec-right-main-heading{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Podkova", serif; 
+    color: #fff;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-right-lessong-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-sec-right-lesson{
+    background-image: linear-gradient(45deg, #044BAF, #C26AE3);
+    height: 203px;
+    width:23.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #87F1FF;
+}
+body .main-custom-page .lesson-book-img{
+    width: 106px;
+    height: 106px;
+}
+body .main-custom-page .custom-lesson-heading-sec {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "Podkova", serif; 
+    color: #fff;
+}
+body .main-custom-page .custom-sec-lesson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#C26AE3,#044BAF );
+    background-size: cover;
+    background-position: center;
+    width: 303px;
+    height: 203px;
+    padding: 20px;
+    
+    
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-right-container .custom-sec-pagi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-right-container .custom-sec-pagi span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-right-container .custom-sec-pagi span:first-child {
+    background-image:linear-gradient(#044BAF,#C26AE3);
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container div .cutom-sec-right-arrow {
+    background-image:linear-gradient(#044BAF,#C26AE3);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* ------------Page 3 Stare Here---------- */
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-left-top-container {
+    width: 466.41px;
+    height: 219.59px;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-6.png);
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-left-end-container {
+    width: 466.41px;
+    height: 249.59px;
+    border-radius: 38px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-6.png);
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-left-top-container .custom-three-time-date-sec-min {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+body .main-custom-page .custom-three-time-date-sec-min h6,span {
+    color: #fff;
+}
+body .main-custom-page .custom-three-time-date-sec-min span {
+    font-size: 38px;
+    font-weight: 900;
+    font-family: var(--font-family);
+    width: 29px!important;
+    height: 47px;
+    background-image: linear-gradient(#044BAF4D,#C26AE34D);
+    border: 1px solid #87F1FF;
+    border-radius: 6px;
+    padding: 7px;
+}
+.custom-three-time-date-sec-min .day-time-sec-min {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .day-time-sec-min {
+    display:flex;
+    gap: 10px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .custom-three-headin-icon h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fff;
+    font-family: "Podkova", serif; 
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-time-date-sec-min h6 {
+    font-size: 19px;
+    width: 700;
+    font-family: "Podkova", serif; 
+    text-align: center;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-left-top-container .custom-three-headin-icon {
+    display: flex;
+
+}
+body .main-custom-page .custom-nav-bar .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-star-heading {
+    display: flex;
+    gap: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-star-heading h2 {
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+    width: 700;
+    font-family: "Podkova", serif; 
+    text-align: center;
+    text-align: left;
+}
+body .main-custom-page .custom-three-main-container .custom-pageone-sec-container .custom-three-star-heading img {
+    height: 40px;
+    width: 40px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-star {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container .cutom-three-main-left .custom-three-star img {
+font-size: 20px;
+padding: 8px;
+background-color: #2a75d9;
+border-radius: 6px;
+border: 1px solid #80F7FF;
+height: 54px;
+width: 54px;
+}
+/* Page 3 Right Container */
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container  .cutom-three-main-right {
+    width: 1010px;
+    height: 650px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/image-5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Page 5 Css Herer */
+body .main-custom-page .five-todo-container {
+    height: auto;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-3.png);
+    background-size: cover;
+    background-position: center;
+    /* width: 1150px; */
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-five-todo-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Rectangle-31.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    align-items: center;
+    padding: 4px 10px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .five-todo-container .five-all-todo-main-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+body .main-custom-page .five-todo-container .five-all-todo-main-container .custom-five-todo-container .custom-five-todo-slot {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: #fff;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .custom-five-roting-box {
+    width: 466.41px;
+    height: 340px;
+    border-radius: 38.61px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-19.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .custom-five-todo-delet-exit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .five-todo-container .custom-five-todo-delet-exit img {
+    padding: 10px;
+    background-image: linear-gradient(45deg, #C26AE3, #044BAF);
+    border-radius: 10px;
+}
+
+/* ------Page six CSS Here---------- */
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container {
+    height: 650px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/main-custom-page-two-3.png);
+    background-size: cover;
+    background-position: center;
+    width: 1050px;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container .custom-six-right-main-heading {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    text-align: center;
+    line-height: 58px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container .custom-six-question-form {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+    font-family: var(--font-family);
+    color: #044BAF;
+    text-transform: capitalize;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container .custom-six-contact-form{
+    position:relative;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container .custom-six-contact-form input {
+    width: 100%;
+    height: 118px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container .custom-six-contact-form img {
+    right: 50px;
+    bottom: 20px;
+    position: absolute;
+}
+
+
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container .custom-teacher-choose-min-container img {
+    height: 126px;
+    width: 109.22px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .custom-sec-left-container .custom-six-roting-box {
+    width: 466.41px;
+    height: 340px;
+    border-radius: 38.61px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-20.png);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+/* Page Seven CSS Here */
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-seven-gouls {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-seven-gouls{
+    font-size: 29px;
+    font-weight: 600px;
+    color: #fff;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-first-child .custom-teacher-profile {
+    width:344px ;
+    height: 288px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-7-1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-seven-select {
+    margin-top: 20px;
+}
+
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-seven-select-box-one{
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    width: 344.91px;
+    height: 268.39px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-23.png);
+    background-size: cover;
+    background-position: center;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-seven-select-box-two{
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    width: 344.91px;
+    height: 268.39px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-25.png);
+    background-size: cover;
+    background-position: center;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-left-container .custom-seven-select-box-three{
+    background: linear-gradient(to bottom, #00b4db, #0083b0);
+    border-radius: 28.55px;
+    border: 4px solid #fff;
+    border-bottom: 7px solid #fff;
+    width: 344.91px;
+    height: 268.39px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-24.png);
+    background-size: cover;
+    background-position: center;
+}
+body .main-custom-page .custom-pageone-sec-container .custom-pageone-right-container .custom-right-top .custom-seven-right-top-first {
+    width:60%;
+    height: 250px;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Untitled-design-26.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #87F1FF;
+    box-sizing: border-box;
+}
+
+/* Page 10 css here */
+body .main-custom-page .custom-pageone-sec-container .custom-three-main-container  .cutom-ten-main-right {
+    width: 1000px;
+    height: 650px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/image-7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Teacher Lesson Page */
+
+body .main-custom-page .custom-teacher-lesson-box {
+    width: 998px;
+    height: 605px;
+    border-radius: 70px;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+body .main-custom-page .custom-main-teacher-lesson {
+    display: flex;
+    gap: 60px;
+}
+
+body .main-custom-page .custom-teacher-lesson-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+
+body .main-custom-page .custom-teacher-lesson-inp-container input {
+    padding: 18px;
+    border-radius: 40px;
+    width: 200px;
+}
+body .main-custom-page .custom-teacher-lesson-inp-container img  {
+    padding: 20px;
+    background-color: red;
+}
+
+
+
+/* Parves New */
+body .main-custom-page .custom-pageone-sec-container .custom-page-two .six-todo-container  .custom-teacher-choose-min-container {
+    display: flex;
+    gap: 20px; 
+    height: 203px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(https://growgoal.online/wp-content/uploads/2024/09/Rectangle-67.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 1px solid #87F1FF;
+    padding: 20px;
+}
+
+.custom-teacher-choose-min-container .teacher {
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+
+}
+
+
+.custom-teacher-choose-min-container .teacher input[type="radio"] {
+    display: none; /* Hide the radio button */
+}
+
+.custom-teacher-choose-min-container .teacher:hover {
+    background-color: #1E5BB4; /* Optional hover effect */
+}
+
+.custom-teacher-choose-min-container .teacher input[type="radio"]:checked + .t-profile {
+    border: 3px solid #ffffff; /* Change border color when selected */
+   
+}
+
+
+/* Select Button  */
+
+.custom-teacher-choose-min-container .teacher img {
+    max-width:85px;
+    max-height: 85px;
+    padding: 5px;
+    border: 3px solid #1E5BB4;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.custom-teacher-choose-min-container .teacher .t-name {
+    font-weight: 400;
+    font-size: 14px;
+    color: white; 
+    margin-top: -5px;
+   
+}
+
+.custom-teacher-choose-min-container .teacher .t-tag {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.545);
+    margin-top: -5px;
+}
+

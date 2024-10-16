@@ -1,0 +1,2 @@
+wp-content/ai1wm-backups/localhost-growgoal-20240824-131451-xfrjhe.wpress filter=lfs diff=lfs merge=lfs -text
+*.wpress filter=lfs diff=lfs merge=lfs -text
